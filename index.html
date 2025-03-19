@@ -1,150 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>堂主小站</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="ios-nav">
-        <div class="ios-nav-container">
+    <header>
+        <nav>
             <div class="logo">堂主小站</div>
-            <div class="nav-links">
-                <a href="energy.html" class="ios-button">正能量</a>
-                <a href="events.html" class="ios-button">事件</a>
-                <a href="media.html" class="ios-button">影音</a>
-                <a href="about.html" class="ios-button">关于</a>
+            <ul>
+                <li><a href="positive.html">正能量</a></li>
+                <li><a href="events.html">事件</a></li>
+                <li><a href="media.html">影音</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-image">
+                <img src="https://placekitten.com/200/200" alt="火力堂主" class="avatar">
             </div>
-        </div>
-    </nav>
-
-    <div class="ios-container">
-        <div class="ios-grid">
-            <aside class="ios-card">
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://via.placeholder.com/200" alt="头像" class="ios-avatar">
-                    <h2 class="ios-subtitle" style="margin-top: 20px;">火力堂主</h2>
-                    <p style="color: var(--text-secondary);">斗鱼TV签约主播</p>
+            <div class="profile-info">
+                <h1>火力堂主</h1>
+                <p class="subtitle">斗鱼TV签约主播</p>
+                <p class="location">📍 河南 洛阳</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">🎮 微博</a>
+                    <a href="#" class="social-link">🎵 网易云音乐</a>
+                    <a href="#" class="social-link">📱 抖音</a>
                 </div>
-                <div class="contact-info">
-                    <p style="margin: 10px 0;">📍 河南 洛阳</p>
-                    <p style="margin: 10px 0;">🎵 网易云音乐</p>
-                    <p style="margin: 10px 0;">🎮 抖音</p>
-                </div>
-            </aside>
-
-            <div class="main-content">
-                <section class="ios-card">
-                    <h2 class="ios-subtitle">简要介绍</h2>
-                    <p style="margin-bottom: 20px;">生活秀主播，包括户外，悠悠球和打游戏等。斗鱼房间号241123，外号"赵老师"、"猪猪"等。反应机敏，擅长做节目效果。主播（至今）的一生都是节目效果，朋友圈文案"直播是我的生活，生活是我的直播。"</p>
-                    
-                    <div class="tags" style="margin-top: 15px;">
-                        <span class="ios-tag">生活秀</span>
-                        <span class="ios-tag">户外</span>
-                        <span class="ios-tag">游戏</span>
-                        <span class="ios-tag">悠悠球</span>
-                    </div>
-                </section>
-
-                <section class="ios-card">
-                    <h2 class="ios-subtitle">近期动态</h2>
-                    <div class="ios-list">
-                        <div class="ios-list-item">
-                            <span>🎥 慢慢工作室直播中</span>
-                            <span style="color: var(--success-color)">进行中</span>
-                        </div>
-                        <div class="ios-list-item">
-                            <span>💬 更多消息讨论请见鱼吧</span>
-                            <span style="color: var(--primary-color)">查看</span>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="ios-card">
-                    <h2 class="ios-subtitle">主播属性</h2>
-                    <p style="margin-bottom: 15px;">生理参数：性别：男 · 出生：1987年 · 身高：176cm · 体重：85kg(左右)</p>
-                    
-                    <h3 style="margin: 15px 0 10px;">特色弹幕</h3>
-                    <div class="tags">
-                        <span class="ios-tag">无敌</span>
-                        <span class="ios-tag">上号</span>
-                        <span class="ios-tag">狂</span>
-                        <span class="ios-tag">麻了</span>
-                        <span class="ios-tag">歪日</span>
-                    </div>
-
-                    <h3 style="margin: 15px 0 10px;">最爱美食</h3>
-                    <div class="tags">
-                        <span class="ios-tag">小面筋</span>
-                        <span class="ios-tag">奶茶</span>
-                        <span class="ios-tag">肉盒</span>
-                        <span class="ios-tag">玉米</span>
-                        <span class="ios-tag">毛豆</span>
-                    </div>
-
-                    <h3 style="margin: 15px 0 10px;">王牌节目</h3>
-                    <div class="tags">
-                        <span class="ios-tag">荧幕TV</span>
-                        <span class="ios-tag">电脑上号</span>
-                        <span class="ios-tag">绿色台球</span>
-                        <span class="ios-tag">打拳水友</span>
-                        <span class="ios-tag">便利店躲猫</span>
-                    </div>
-                </section>
-
-                <section class="ios-card">
-                    <h2 class="ios-subtitle">专属BGM</h2>
-                    <div class="ios-list">
-                        <div class="ios-list-item">
-                            <span>《我是真的爱上你》</span>
-                            <span style="color: var(--gray-1)">翻唱 by 主播</span>
-                        </div>
-                        <div class="ios-list-item">
-                            <span>《猪猪》</span>
-                            <span style="color: var(--gray-1)">作词/作曲/演唱 by 主播 鱼子酱</span>
-                        </div>
-                        <div class="ios-list-item">
-                            <span>《麒报行》</span>
-                            <span style="color: var(--gray-1)">改编 by 主播 慕—cc</span>
-                        </div>
-                    </div>
-                </section>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // 添加卡片动画
-            const cards = document.querySelectorAll('.ios-card');
-            cards.forEach((card, index) => {
-                card.style.opacity = '0';
-                card.style.animation = `slideUp 0.5s ease-out ${index * 0.1}s forwards`;
-            });
+        <section class="intro">
+            <h2>简要介绍</h2>
+            <p>生活秀主播，包括户外，悠悠球和打游戏等。斗鱼房间号241123，外号"赵老师"、"猪猪"等。反应机敏，擅长做节目效果。主播（至今）的一生都是节目效果，朋友圈文案"直播是我的生活，生活是我的直播。"</p>
+        </section>
 
-            // 添加标签动画
-            const tags = document.querySelectorAll('.ios-tag');
-            tags.forEach(tag => {
-                tag.addEventListener('click', function() {
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = 'scale(1)';
-                    }, 100);
-                });
-            });
+        <section class="recent-status">
+            <h2>近期动态 <span class="tag">活动日历</span></h2>
+            <ul>
+                <li>🎥 偶师工作室直播中</li>
+                <li>💬 更多消息讨论请见<a href="#" class="highlight">鱼吧</a></li>
+            </ul>
+        </section>
 
-            // 添加列表项动画
-            const listItems = document.querySelectorAll('.ios-list-item');
-            listItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    this.style.background = 'var(--gray-6)';
-                    setTimeout(() => {
-                        this.style.background = '';
-                    }, 200);
-                });
-            });
-        });
-    </script>
+        <section class="streamer-info">
+            <h2>主播属性</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>生理の参数</h3>
+                    <p>性别：男 · 出生：1987年 · 身高：176cm · 体重：85kg(左右)</p>
+                </div>
+                <div class="info-item">
+                    <h3>特色の弹幕</h3>
+                    <p>无敌 · 上号 · 狂 · 麻了 · 歪日</p>
+                </div>
+                <div class="info-item">
+                    <h3>最爱の美食</h3>
+                    <p>小面筋 · 奶茶 · 肉盒 · 玉米 · 毛豆</p>
+                </div>
+                <div class="info-item">
+                    <h3>王牌の节目</h3>
+                    <p>荧幕TV · 电脑上号 · 绿色台球 · 打拳术友 · 便利店战神</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bgm">
+            <h2>专属BGM</h2>
+            <ul class="music-list">
+                <li>《我是真的爱上你》- 翻唱 by 主播</li>
+                <li>《猪猪》- 作词/作曲/演唱 by 主播 鱼子酱</li>
+                <li>《麒将行》- 填词改编自《盗将行》by 本站站长，<a href="#" class="highlight">直播翻唱</a> by 主播 慕—cc</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 堂主小站 - All rights reserved</p>
+    </footer>
 </body>
 </html>

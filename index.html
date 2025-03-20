@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英雄联盟主播粉丝站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f7;
+            color: #000000;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 2rem;
+            position: relative;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .streamer-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: #007AFF;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(0, 122, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: rgba(0, 122, 255, 0.2);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #000000;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .schedule-item {
+            background: rgba(0, 122, 255, 0.05);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .schedule-item h3 {
+            color: #007AFF;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .highlight-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .highlight-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .highlight-card .content {
+            padding: 1rem;
+        }
+
+        .highlight-card h3 {
+            color: #000000;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-item {
+            background: rgba(0, 122, 255, 0.05);
+            padding: 1.2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            color: #007AFF;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666666;
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .streamer-avatar {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ddragon.leagueoflegends.com/cdn/13.24.1/img/profileicon/5710.png" alt="主播头像" class="streamer-avatar">
+        <h1>主播昵称</h1>
+        <p>英雄联盟知名主播 | 前职业选手 | 峡谷之巅最强上单</p>
+        <div class="social-links">
+            <a href="#">斗鱼直播间</a>
+            <a href="#">虎牙直播间</a>
+            <a href="#">微博</a>
+            <a href="#">抖音</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>关于我</h2>
+            <p>大家好，我是XXX，英雄联盟资深玩家和主播。曾经作为职业选手效力于多支顶级战队，现在专注于直播分享游戏技巧和与粉丝互动。我的直播风格轻松幽默，擅长上路对线细节讲解，希望能帮助更多玩家提升游戏水平。</p>
+        </section>
+
+        <section id="stats">
+            <h2>直播数据</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">1000万+</div>
+                    <div>粉丝数量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2000+</div>
+                    <div>直播场次</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">王者</div>
+                    <div>最高段位</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h2>直播时间表</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <h3>周一至周五</h3>
+                    <p>19:00 - 24:00</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>周六</h3>
+                    <p>14:00 - 24:00</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>周日</h3>
+                    <p>14:00 - 22:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights">
+            <h2>精彩时刻</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt120105349c8e60d4/609ac6bd1cac355a10c1e5c4/05112021_MSIChampionshipRecap_banner.jpg" alt="精彩操作1">
+                    <div class="content">
+                        <h3>五杀精彩时刻</h3>
+                        <p>极限操作，以一敌五，完成惊天逆转！</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9a2715eda387bc5e/626c2df84eb78011186c7290/04292022_SetupArticle_1920x1080.jpg" alt="精彩操作2">
+                    <div class="content">
+                        <h3>1V2击杀集锦</h3>
+                        <p>上路单带，完美处理打野gank！</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc28d43095579c8d5/5f4dc6325aceb2077d0f4842/champion_overview_banner.jpg" alt="精彩操作3">
+                    <div class="content">
+                        <h3>团战指挥</h3>
+                        <p>关键团战决策，带领队伍走向胜利！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 英雄联盟主播粉丝网站 | 联系邮箱：contact@example.com</p>
+    </footer>
+</body>
+</html>
